@@ -11,7 +11,7 @@ Example result:
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Balloon Detection.
 
 ```bash
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 
 You can download pre-trained weigths from [here](https://drive.google.com/open?id=1BvUSgcQjQStZ_KaCYjakzfNXBeLrzMvS)
