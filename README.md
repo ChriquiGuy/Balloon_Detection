@@ -14,7 +14,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Balloon
 pip3 install requirements.txt
 ```
 
-You can download pre-traind weigths from [here](https://drive.google.com/open?id=1BvUSgcQjQStZ_KaCYjakzfNXBeLrzMvS)
+You can download pre-trained weigths from [here](https://drive.google.com/open?id=1BvUSgcQjQStZ_KaCYjakzfNXBeLrzMvS)
 (Locate the weigths in the project root folder)
 
 ## Usage
