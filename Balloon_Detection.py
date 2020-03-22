@@ -1,8 +1,3 @@
-# This code is written at BigVision LLC. It is based on the OpenCV project. It is subject to the license terms in the LICENSE file found in this distribution and at http://opencv.org/license.html
-
-# Usage example:  python3 object_detection_yolo.py --video=run.mp4
-#                 python3 object_detection_yolo.py --image=bird.jpg
-
 import cv2 as cv
 import argparse
 import sys
@@ -19,6 +14,7 @@ inpHeight = 416 #608     #Height of network's input image
 parser = argparse.ArgumentParser(description='Object Detection using YOLOds<fOPENCV')
 parser.add_argument('--image', help='Path to image file.')
 parser.add_argument('--video', help='Path to video file.')
+parser.add_argument('--camera', help='Number of camera.')
 
 args = parser.parse_args()
 
@@ -131,9 +127,12 @@ elif (args.video):
         sys.exit(1)
     cap = cv.VideoCapture(args.video)
     outputFile = './result/result_video.avi'
-else:
+elif (args.camera):
     # Webcam input
-    cap = cv.VideoCapture(0)
+    cap = cv.VideoCapture(int(args.camera))
+else:
+    print("No arguments specified")
+    sys.exit(0)
 
 # Get the video writer initialized to save the output video
 if (not args.image):
