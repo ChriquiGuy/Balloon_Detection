@@ -1,14 +1,17 @@
 # Balloon Detection
 
-A simple detection model with detection script for Balloon detection.
+A simple detection model for Balloon detection.
 
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Balloon Detection.
 
 ```bash
-pip install requirements.txt
+pip3 install requirements.txt
 ```
+
+You can download pre-traind weigths from here
+(Locate the weigths in the project root folder)
 
 ## Usage
 
@@ -20,8 +23,14 @@ python3 Balloon_Detection.py --image test.jpg
 python3 Balloon_Detection.py --video test.mp4
 ```
 
+Edit line 13 in "Balloon_Detection.py" to change confidence threshold:
+```python
+confThreshold = 0.1  #Confidence threshold
+```
+
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. 
+For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-None
+By the order of the Peaky Blinders
