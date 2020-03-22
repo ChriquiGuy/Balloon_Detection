@@ -2,6 +2,10 @@
 
 A simple detection model for Balloon detection.
 
+Example result:
+![Ballon detection result](https://github.com/GuyChriqui/Balloon_Detection/blob/master/result/result_img.jpg?raw=true)
+
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Balloon Detection.
@@ -10,7 +14,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Balloon
 pip3 install requirements.txt
 ```
 
-You can download pre-traind weigths from [here](https://drive.google.com/open?id=1BvUSgcQjQStZ_KaCYjakzfNXBeLrzMvS)
+You can download pre-trained weigths from [here](https://drive.google.com/open?id=1BvUSgcQjQStZ_KaCYjakzfNXBeLrzMvS)
 (Locate the weigths in the project root folder)
 
 ## Usage
@@ -21,11 +25,14 @@ python3 Balloon_Detection.py --image test.jpg
 
 # Detection on video
 python3 Balloon_Detection.py --video test.mp4
+
+# Detection from live camera
+python3 Balloon_Detection.py --camera 0  # Camera number '0'
 ```
 
-Edit line 13 in "Balloon_Detection.py" to change confidence threshold:
+Edit [this line](https://github.com/GuyChriqui/Balloon_Detection/blob/master/Balloon_Detection.py#L8) in "Balloon_Detection.py" to change confidence threshold:
 ```python
-confThreshold = 0.1  #Confidence threshold
+confThreshold = 0.1  # Confidence threshold
 ```
 
 ## Contributing
