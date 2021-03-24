@@ -81,7 +81,7 @@ PyYAML==5.1
 reportlab==3.4.0
 requests==2.20.0
 requests-unixsocket==0.1.5
-rsa==3.4.2
+rsa==4.1
 s3transfer==0.3.3
 scikit-image==0.16.2
 scipy==1.4.1
