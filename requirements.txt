@@ -95,7 +95,7 @@ system-service==0.3
 systemd-python==234
 tensorboard==1.14.0
 tensorflow-estimator==1.14.0
-tensorflow-gpu==1.15.2
+tensorflow-gpu==2.5.3
 termcolor==1.1.0
 typed-ast==1.4.1
 typing-extensions==3.7.4.1
